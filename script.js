@@ -9,8 +9,8 @@ window.onload = () => {
     }
   ).addTo(map);
 
-  // Tile dari Google Earth Engine
-  const geeTileUrl = "https://earthengine.googleapis.com/v1/projects/ee-mrgridhoarazzak/maps/cdfcbfbb5c4c1019e5be2c1dda11cf68-45623c2fd3b42f7e9d3d0ea8ed5d0a1b/tiles/{z}/{x}/{y}";
+  // Tile Earth Engine baru
+  const geeTileUrl = "https://earthengine.googleapis.com/v1/projects/ee-mrgridhoarazzak/maps/cdfcbfbb5c4c1019e5be2c1dda11cf68-56677bb43cdf9f36e1f388cd7777486f/tiles/{z}/{x}/{y}";
 
   const geeLayer = L.tileLayer(geeTileUrl, {
     attribution: "Google Earth Engine",
@@ -22,7 +22,7 @@ window.onload = () => {
     const div = L.DomUtil.create('div', 'legend');
     div.innerHTML = `
       <strong>Legenda</strong><br>
-      <i style="background:#1f78b4"></i> Area Konservasi DAS
+      <i style="background:#1f78b4;width:18px;height:18px;display:inline-block;margin-right:8px;"></i> Area Konservasi DAS
     `;
     return div;
   }.addTo(map);
