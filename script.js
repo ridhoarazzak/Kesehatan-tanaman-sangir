@@ -10,7 +10,7 @@ window.onload = () => {
   ).addTo(map);
 
   // Tile Google Earth Engine terbaru
-  const geeTileUrl = "https://earthengine.googleapis.com/v1/projects/ee-mrgridhoarazzak/maps/00509606df3bd18cce2d225d2f7c4e4d-0bf19e9d87fe31c8e2d7525c4d67df63/tiles/{z}/{x}/{y}";
+  const geeTileUrl = "https://earthengine.googleapis.com/v1/projects/ee-mrgridhoarazzak/maps/4d4132521ceb9b8ab5bb5b8aca384bd2-5585aa1a899dd6a41b23652ba2671850/tiles/{z}/{x}/{y}";
 
   const geeLayer = L.tileLayer(geeTileUrl, {
     attribution: "Google Earth Engine",
@@ -22,7 +22,7 @@ window.onload = () => {
     const div = L.DomUtil.create('div', 'legend');
     div.innerHTML = `
       <strong>Legenda</strong><br>
-      <i style="background:#1f78b4;width:18px;height:18px;display:inline-block;margin-right:8px;"></i> Kesehatan Tanaman
+      <i style="background:#1f78b4;width:18px;height:18px;display:inline-block;margin-right:8px;"></i> Kelas Lahan
     `;
     return div;
   }.addTo(map);
